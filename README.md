@@ -4,3 +4,4 @@ This repository contains code and documentation that describes what I have learn
 ## Project 2: Spaceship Interface
 
 In this project, I learned the basics of controlling the pins on the Arduino board using the commands pinMode, digitalRead, and digitalWrite.
+
