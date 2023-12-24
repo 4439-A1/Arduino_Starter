@@ -22,4 +22,7 @@ Next, from the data sheet, we can find that the temperature can be found from th
 $$T = (V-.5)\cdot100$$
 
 as the offset voltage is .5 V (to display temperature in the negatives), and each 0.01 V (or 10 mV) corresponds to a 1 degree Celsius increment.
+
 <img width="362" alt="image" src="https://github.com/4439-A1/Arduino_Starter/assets/84205848/ce2b0136-da1e-4bd6-80b3-06184b718891">
+
+Once I found the temperature, I used if/else loops in the code to control the output pins wired to LED indicators. The green LED indicates the temperature being above the baseline temperature (I set this to 19 degrees as I did this project over winter break and thus the room was cold). For every 1.5 degrees Celsius increase above this baseline temperature, one LED was set to turn on.
