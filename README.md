@@ -1,4 +1,4 @@
-# Arduino_Starter
+# Arduino Starter Kit
 This repository contains code and documentation that describes what I have learned from the Arduino starter kit.
 
 ## Project 2: Spaceship Interface
