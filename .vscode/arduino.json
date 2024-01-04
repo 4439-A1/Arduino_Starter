@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "port": "/dev/tty.usbmodem11401",
-    "sketch": "project_04_colorMixingLamp/project_04_colorMixingLamp.ino"
+    "port": "/dev/tty.usbmodem1401",
+    "sketch": "project_05_moodCue/project_05_moodCue.ino"
 }
