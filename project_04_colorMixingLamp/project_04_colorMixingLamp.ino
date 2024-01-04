@@ -1,15 +1,19 @@
+// Digital output pins, but we will assign duty cycles to each pin later
 const int greenLEDPin = 9;
 const int redLEDPin = 10;
 const int blueLEDPin = 11;
 
+// Analog input pins
 const int redSensorPin = A0;
 const int greenSensorPin = A1;
 const int blueSensorPin = A2;
 
+// Represents duty cycle, ranges from 0-255. For example, a value of 127 will yield a duty cycle of 50% as 127 is half of 255
 int redValue = 0;
 int greenValue = 0;
 int blueValue = 0;
 
+// Ranges from 0-1023. Divide by 4 to get a number from 0-255, to use as the duty cycle.
 int redSensorValue = 0;
 int greenSensorValue = 0;
 int blueSensorValue = 0;
