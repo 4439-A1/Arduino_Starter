@@ -35,4 +35,4 @@ I used three phototransistors, each of which were covered by colored gel which f
 
 The duty cycle is given as a fraction of 255. Thus, if our reading for green light is 1000, we will get 250 by dividing by 4, and the duty cycle will be 250/255=98%.
 
-We output the duty cycle to the corresponding LED in the multicolor LED, to produce a nice off-white color light (in natural lighting conditions). This is done by using the {analogWrite()} function, which takes two arguments: the pin to write to, and the duty cycle (in the notation discussed above).
+We output the duty cycle to the corresponding LED in the multicolor LED, to produce a nice off-white color light (in natural lighting conditions). This is done by using the '{analogWrite()}' function, which takes two arguments: the pin to write to, and the duty cycle (in the notation discussed above).
