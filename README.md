@@ -26,3 +26,13 @@ as the offset voltage is .5 V (to display temperature in the negatives), and eac
 <img width="362" alt="image" src="https://github.com/4439-A1/Arduino_Starter/assets/84205848/ce2b0136-da1e-4bd6-80b3-06184b718891">
 
 Once I found the temperature, I used if/else loops in the code to control the output pins wired to LED indicators. The green LED indicates the temperature being above the baseline temperature (I set this to 19 degrees as I did this project over winter break and thus the room was cold). For every 1.5 degrees Celsius increase above this baseline temperature, one LED was set to turn on.
+
+## Project 4: Color Mixing Lamp
+
+The purpose of the project was to detect Red, Green, and Blue light from the room's natural lighting and produce a light which depends on the external conditions.
+
+I used three phototransistors, each of which were covered by colored gel which filter the light coming in. Each photoresistor results in an analog reading ranging from 0 to 1023, and we divide this value by 4 to get a value ranging from 0 to 255. This gives our duty cycle.
+
+The duty cycle is given as a fraction of 255. Thus, if our reading for green light is 1000, we will get 250 by dividing by 4, and the duty cycle will be 250/255=98%.
+
+We output the duty cycle to the corresponding LED in the multicolor LED, to produce a nice off-white color light (in natural lighting conditions). This is done by using the {analogWrite()} function, which takes two arguments: the pin to write to, and the duty cycle (in the notation discussed above).
